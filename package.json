@@ -1,6 +1,6 @@
 {
   "name": "svelte-mf2",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A internationalization library that uses message format 2",
   "type": "module",
   "main": "./dist/index.cjs",
@@ -13,7 +13,7 @@
       "types": "./dist/index.d.ts"
     },
     "./T": "./src/components/T.svelte",
-    "./Formatter": "./src/components/Formatter.svelte", 
+    "./Formatter": "./src/components/Formatter.svelte",
     "./package.json": "./package.json"
   },
   "svelte": "./src/components/T.svelte",
