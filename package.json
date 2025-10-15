@@ -12,8 +12,11 @@
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
+    "./components/T.svelte": "./src/components/T.svelte",
+    "./components/Formatter.svelte": "./src/components/Formatter.svelte",
     "./package.json": "./package.json"
   },
+  "svelte": "./src/components/T.svelte",
   "scripts": {
     "dev": "tsup --watch",
     "test": "npx cross-env NODE_OPTIONS=--experimental-vm-modules jest",

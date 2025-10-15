@@ -13,6 +13,7 @@ export default defineConfig(
       minify: !options.watch,
       sourcemap: options.watch,
       splitting: true,
+      external: ['svelte', 'messageformat']
     },
     {
       clean: false,
@@ -23,6 +24,7 @@ export default defineConfig(
       minify: !options.watch,
       sourcemap: options.watch,
       splitting: true,
+      external: ['svlete', 'messageformat'] 
     },
   ],
 );
