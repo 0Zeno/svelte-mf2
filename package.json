@@ -1,7 +1,7 @@
 {
-  "name": "@sveltekit-i18n/base",
-  "version": "1.3.7",
-  "description": "Base functionality of sveltekit-i18n library with a support for external message parsers.",
+  "name": "svelte-mf2",
+  "version": "1.0.0",
+  "description": "A internationalization library that uses message format 2",
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -12,8 +12,8 @@
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./components/T.svelte": "./src/components/T.svelte",
-    "./components/Formatter.svelte": "./src/components/Formatter.svelte",
+    "./T": "./src/components/T.svelte",
+    "./Formatter": "./src/components/Formatter.svelte", 
     "./package.json": "./package.json"
   },
   "svelte": "./src/components/T.svelte",
