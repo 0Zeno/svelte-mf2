@@ -12,8 +12,14 @@
       "import": "./dist/index.js",
       "types": "./dist/index.d.ts"
     },
-    "./T": "./src/components/T.svelte",
-    "./Formatter": "./src/components/Formatter.svelte",
+    "./T": {
+      "svelte": "./src/components/T.svelte",
+      "types": "./src/components/T.svelte"
+    },
+    "./Formatter": {
+      "svelte": "./src/components/Formatter.svelte",
+      "types": "./src/components/Formatter.svelte"
+    },
     "./package.json": "./package.json"
   },
   "svelte": "./src/components/T.svelte",
@@ -25,7 +31,8 @@
     "lint": "eslint --fix --ext .ts,.js --ignore-path .gitignore ."
   },
   "files": [
-    "dist"
+    "dist",
+    "src/components"
   ],
   "pre-commit": [
     "lint"

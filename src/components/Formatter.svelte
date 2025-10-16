@@ -1,5 +1,5 @@
 <script lang="ts">
-  import type { TreeNode } from '../parsers/mf2.js';
+  import type { TreeNode } from '../mf2.js';
 
   interface Props {
     tree: TreeNode[];
@@ -32,6 +32,7 @@
           {#each node.children as child}{@render renderNode(child)}{/each}
         </a>
       {:else}
+        <!-- svelte-ignore a11y_missing_attribute -->
         <a style="text-decoration: underline">
           {#each node.children as child}{@render renderNode(child)}{/each}
         </a>

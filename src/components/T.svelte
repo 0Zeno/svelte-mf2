@@ -12,12 +12,20 @@
 
   let { key, params = {}, locale, components, default: defaultValue }: Props = $props();
 
-  const { t, locale: localeStore } = getContext('i18n');
+  const context = getContext<{ t: any; l: any; locale: any }>('i18n');
+  
+  if (!context) {
+    throw new Error('T component must be used within an i18n context');
+  }
+  
+  const { t, l, locale: localeStore } = context;
 
   const currentLocale = $derived(locale || $localeStore || 'en');
 
   const result = $derived.by(() => {
-    const translation = t(key, params, currentLocale);
+    const translation = locale 
+      ? l(currentLocale, key, params)
+      : t(key, params);
     return translation || defaultValue || key;
   });
 

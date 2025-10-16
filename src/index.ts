@@ -369,3 +369,4 @@ export default class I18n<ParserParams extends Parser.Params = any> {
 export { mf2Parser } from './mf2.js';
 export type { TreeNode } from './mf2.js';
 export { mf2ParserAdapter } from './mf2Adapter.js';
+
